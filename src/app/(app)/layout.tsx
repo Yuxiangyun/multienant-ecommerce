@@ -1,5 +1,7 @@
+
 import type { Metadata } from "next";
 import {DM_Sans} from "next/font/google"
+// @ts-ignore
 import "./globals.css";
 
 
