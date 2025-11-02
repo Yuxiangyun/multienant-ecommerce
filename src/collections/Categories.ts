@@ -27,10 +27,10 @@ export const Categories: CollectionConfig = {
     },
     {
       name: "subcategories",
-      type: "join",
+      type: "join", 
       collection:"categories",
       on: "parent",
       hasMany: true
     }
-  ],
+  ], 
 };
