@@ -36,6 +36,8 @@ export const CategoriesSidebar = ({
         setParentCategories(null)
         onOpenChange(open)
     }
+
+    
     const handleCategoryClick = (category:CategoriesGetManyOutput[1]) => {
         if(category.subcategories && category.subcategories.length>0){
             setParentCategories(category.subcategories as CategoriesGetManyOutput)
