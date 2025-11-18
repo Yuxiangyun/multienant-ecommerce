@@ -1,5 +1,5 @@
 import type { CollectionConfig } from "payload";
-import { string } from "zod";
+
 
 export const Products: CollectionConfig = {
     slug:"products",
@@ -26,6 +26,12 @@ export const Products: CollectionConfig = {
             type: "relationship",
             relationTo:"categories",
             hasMany: false
+        },
+        {
+            name: "tags",
+            type: "relationship",
+            relationTo:"tags",
+            hasMany: true
         },
         {
             name:"image",
